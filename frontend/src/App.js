@@ -6,6 +6,7 @@ import { AuthProvider } from './context/AuthContext'
 import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
 import Header from './components/Header'
+import PropertyDetailPage from './pages/PropertyDetailPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Header/>
           <PrivateRoute component={HomePage} path="/" exact/>
           <Route component={LoginPage} path="/login"/>
+          <Route component={PropertyDetailPage} path="/properties/:id" />
         </AuthProvider>
       </Router>
     </div>

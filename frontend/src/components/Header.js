@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
 import { Link } from 'react-router-dom'
 import AuthContext from '../context/AuthContext'
+import './Header.css'
 
 const Header = () => {
     let {user, logoutUser} = useContext(AuthContext)
@@ -8,7 +9,7 @@ const Header = () => {
 
         <nav className="navbar navbar-expand-md navbar-dark bg-dark mb-4">
             <div className="container-fluid">
-                <Link to="/" className="navbar-brand">PMS</Link>
+                <Link to="/" className="navbar-brand">Property Mgt System</Link>
 
                 <div>
                     <ul className="navbar-nav me-auto mb-2 mb-md-0">

@@ -52,3 +52,12 @@ def getProperty(request):
     properties = Property.objects.all()
     serializer = PropertySerializer(properties, many=True)
     return Response(serializer.data)
+
+@api_view(['GET'])
+def getPropertyById(request, id):
+    try:
+        property = Property.objects.get(id=id)
+        serializer = PropertySerializer(property)
+        return Response(serializer.data)
+    except Property.DoesNotExist:
+        return Response({'error': 'Property not found'}, status=404)

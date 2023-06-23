@@ -1,0 +1,31 @@
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .property-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .property-table {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .property-image img {
+    max-width: 30%; /* Adjust the percentage to your desired image width */
+  }
