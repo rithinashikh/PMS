@@ -1,11 +1,5 @@
 from rest_framework.serializers import ModelSerializer
-from base.models import Note, Property
-
-
-class NoteSerializer(ModelSerializer):
-    class Meta:
-        model = Note
-        fields = '__all__'
+from base.models import Property
 
 class PropertySerializer(ModelSerializer):
     class Meta:
